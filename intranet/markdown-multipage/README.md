@@ -2,8 +2,14 @@
 
 Una biblioteca editorial de **100 prompts profesionales**, organizada por resultados de trabajo. Cada categoría contiene ejemplos listos para copiar, instrucciones de implementación y controles de calidad.
 
+![Categorías](https://img.shields.io/badge/categorías-10-5B5FC7)
+![Prompts](https://img.shields.io/badge/prompts-100-0078D4)
+![Scheduled tasks](https://img.shields.io/badge/tareas_programadas-24-107C10)
+
+> [!TIP]
 > **Empiece aquí:** lea [Cómo diseñar un buen prompt](00-como-usar.md) y luego elija una categoría.
 
+> [!NOTE]
 > **Automatización recurrente:** consulte [Tareas programadas en Microsoft Copilot](13-tareas-programadas.md) para configurar briefs diarios, revisiones semanales y seguimientos automáticos con aprobación humana.
 
 ## Explorar por categoría
@@ -29,12 +35,21 @@ Una biblioteca editorial de **100 prompts profesionales**, organizada por result
 4. **Verifique la respuesta** antes de compartirla o ejecutar una acción.
 5. Consulte [Implementación, seguridad y gobierno](11-implementacion-seguridad.md) antes de publicar una biblioteca corporativa.
 
+```mermaid
+flowchart LR
+    A[Elegir] --> B[Adaptar]
+    B --> C[Ejecutar]
+    C --> D[Verificar]
+    D --> E[Reutilizar o programar]
+```
+
 ## Recursos
 
 - [Cómo diseñar un buen prompt](00-como-usar.md)
 - [Implementación, seguridad y gobierno](11-implementacion-seguridad.md)
 - [Fuentes oficiales de Microsoft](12-fuentes.md)
 - [Tareas programadas: 24 ideas y plantillas](13-tareas-programadas.md)
+- [Sistema editorial Markdown](../EDITORIAL_STYLE.md)
 - [Versión completa en una sola página](../../MICROSOFT_365_COPILOT_PROMPTS.md)
 
 ---

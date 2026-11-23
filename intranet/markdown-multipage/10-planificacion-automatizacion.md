@@ -6,6 +6,12 @@
 > **Aplicaciones:** Planner, Copilot Chat y agentes.
 > **Control:** diferencie sugerir acciones de ejecutarlas y mantenga aprobaciones humanas.
 
+> [!IMPORTANT]
+> Automatice únicamente después de estabilizar el proceso manual, sus fuentes, sus excepciones y su mecanismo de aprobación.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Convierte `[brief]` en un plan con resultados, hitos, tareas, dependencias, roles, fechas propuestas y riesgos. Marca supuestos.” | Valide capacidad y fechas con el equipo. |
@@ -18,6 +24,8 @@
 | 8 | “Evalúa si `[proceso]` necesita un agente. Describe usuario, objetivo, fuentes, acciones, permisos, límites, aprobaciones y métricas.” | No cree un agente si basta un prompt. |
 | 9 | “Redacta instrucciones para un agente de `[función]`: alcance, fuentes, pasos, formato, rechazo, escalamiento y aprobaciones.” | Pruebe casos válidos y adversos. |
 | 10 | “Crea pruebas para `[agente]`: casos normales, datos faltantes, permisos insuficientes, instrucciones maliciosas, fallo de fuente y rechazo.” | No publique sin pruebas y observabilidad. |
+
+</details>
 
 ---
 

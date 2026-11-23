@@ -6,6 +6,12 @@
 > **Aplicación:** PowerPoint.
 > **Control:** revise que diseño, cifras y notas no distorsionen las fuentes.
 
+> [!TIP]
+> Genere primero la estructura narrativa y después las diapositivas. Así evita un deck visualmente correcto pero estratégicamente vacío.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Crea una presentación de `[número]` diapositivas basada en `[documento]` para `[audiencia]`. Incluye agenda, narrativa, evidencia, riesgos, recomendación y próximos pasos.” | Use un archivo fuente sólido y revise cada diapositiva. |
@@ -18,6 +24,8 @@
 | 8 | “Adapta la presentación de `[audiencia original]` a `[nueva audiencia]`. Conserva hechos; ajusta profundidad, ejemplos y vocabulario.” | Mantenga una copia original. |
 | 9 | “Audita legibilidad, densidad, contraste, jerarquía, texto alternativo y dependencia del color. Prioriza correcciones.” | Complete con el comprobador de accesibilidad. |
 | 10 | “Crea una diapositiva de decisión: decisión requerida, contexto, opciones, criterios, riesgos y fecha límite.” | Valide con el propietario del proceso. |
+
+</details>
 
 ---
 

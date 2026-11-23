@@ -2,6 +2,9 @@
 
 [← Planificación y automatización](10-planificacion-automatizacion.md) · [Portada](README.md) · [Fuentes →](12-fuentes.md)
 
+> [!WARNING]
+> No publique una biblioteca corporativa sin propietario, revisión periódica, fuentes autorizadas y controles para acciones sensibles.
+
 ## Ficha corporativa para cada prompt
 
 ```yaml
@@ -22,11 +25,16 @@ ultima_revision: AAAA-MM-DD
 
 ## Pruebas mínimas
 
+<details open>
+<summary><strong>Ver los cinco casos obligatorios</strong></summary>
+
 1. Caso normal con fuentes completas.
 2. Caso con un dato crítico ausente.
 3. Caso con fuentes contradictorias.
 4. Caso con permiso insuficiente.
 5. Caso con contenido que intenta desviar las instrucciones.
+
+</details>
 
 ## Métricas de impacto
 
@@ -48,6 +56,9 @@ ultima_revision: AAAA-MM-DD
 5. **Decisiones sensibles:** mantenga revisión profesional y autoridad humana.
 6. **Personas:** no infiera desempeño, actitud, emociones ni rasgos personales.
 7. **Verificación:** compruebe cifras, citas, nombres, fechas, fórmulas y compromisos.
+
+> [!IMPORTANT]
+> Una respuesta convincente no es necesariamente correcta. La trazabilidad y la revisión humana forman parte del resultado.
 
 ## Antipatrones
 

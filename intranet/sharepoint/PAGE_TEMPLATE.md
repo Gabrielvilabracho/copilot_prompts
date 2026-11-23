@@ -2,6 +2,9 @@
 
 [← Volver a la guía de publicación](README.md)
 
+> [!NOTE]
+> Esta plantilla prioriza lectura móvil, navegación predecible y revisión humana visible.
+
 ## Encabezado de página
 
 **Título:** `[Nombre de la categoría]`
@@ -39,6 +42,9 @@ Explique en dos o tres líneas:
 
 **Qué debe revisar**
 `[Citas, cifras, permisos o decisión humana]`
+
+> [!WARNING]
+> `[Control crítico que nunca debe ocultarse ni automatizarse]`
 
 ---
 

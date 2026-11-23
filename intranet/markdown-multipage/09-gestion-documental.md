@@ -6,6 +6,12 @@
 > **Aplicaciones:** SharePoint, OneDrive y Copilot Chat.
 > **Control:** revise permisos, vigencia, propiedad y etiquetas.
 
+> [!WARNING]
+> Copilot respeta los permisos existentes; por eso, una sobreexposición previa puede convertirse en una exposición más fácil de descubrir.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Encuentra la política vigente sobre `[tema]`. Prioriza documentos aprobados y recientes. Devuelve título, propietario, fecha, estado, enlace y pasajes.” | Confirme que “vigente” sea explícito. |
@@ -18,6 +24,8 @@
 | 8 | “Responde `[pregunta]` usando solo `[política]`. Cita la sección. Si no responde, dilo e indica a quién consultar.” | No sustituye asesoría profesional. |
 | 9 | “Lista evidencia disponible para `[control]`: ubicación, propietario, periodo y brecha. No declares cumplimiento.” | La conclusión corresponde a auditoría. |
 | 10 | “Propón un ciclo documental: creación, revisión, aprobación, publicación, actualización y archivo. Define roles y criterios.” | Aprobación de seguridad y cumplimiento. |
+
+</details>
 
 ---
 

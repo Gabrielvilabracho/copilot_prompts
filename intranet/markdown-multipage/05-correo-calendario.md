@@ -6,6 +6,12 @@
 > **Aplicación:** Outlook.
 > **Control:** confirme destinatarios, adjuntos, fechas y compromisos antes de enviar.
 
+> [!WARNING]
+> Un borrador correcto enviado al destinatario equivocado sigue siendo un incidente. Revise audiencia y adjuntos.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Resume este hilo en contexto, decisiones, desacuerdos, preguntas abiertas y acciones con responsable y fecha. Cita el mensaje de cada decisión.” | Compare el resumen con el hilo. |
@@ -18,6 +24,8 @@
 | 8 | “Redacta un mensaje para reprogramar `[reunión]`. Explica `[motivo]`, ofrece `[opciones]`, reconoce el impacto y confirma preparación vigente.” | Compruebe disponibilidad real. |
 | 9 | “Crea un correo semanal de `[equipo]` con logros, métricas, decisiones, riesgos, ayuda necesaria y próximos hitos.” | Revise datos sensibles y distribución. |
 | 10 | “Evalúa este borrador por claridad, tono, ambigüedad, compromiso e interpretaciones adversas. Propón una versión y explica cambios.” | Aplique revisión legal o de RR. HH. cuando corresponda. |
+
+</details>
 
 ---
 

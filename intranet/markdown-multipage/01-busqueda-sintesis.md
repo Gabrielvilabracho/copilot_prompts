@@ -6,6 +6,12 @@
 > **Aplicaciones:** Copilot Chat y Researcher.
 > **Control:** delimite periodo y fuentes; solicite citas y marque contradicciones.
 
+> [!TIP]
+> Empiece con pocas fuentes de alta calidad. Amplíe el alcance solo si la primera respuesta deja vacíos concretos.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Resume `[tema o proyecto]` usando `[archivos/correos/chats]` del periodo `[fechas]`. Para `[audiencia]`, presenta situación, decisiones, riesgos, bloqueos y próximos pasos. Incluye una referencia por afirmación y marca contradicciones.” | Añada fuentes concretas con `/` o adjuntos. |
@@ -18,6 +24,8 @@
 | 8 | “Explica `[tema]` usando `[fuentes]` en tres niveles: 50 palabras para dirección, 200 para responsables y una lista técnica para especialistas.” | Compare versiones para detectar pérdida de matices. |
 | 9 | “Compara la versión `[anterior]` con `[actual]`. Enumera cambios de alcance, obligaciones, fechas, responsables y riesgos; clasifica como añadido, eliminado o modificado.” | Confirme que las versiones sean correctas. |
 | 10 | “Prepara un brief sobre `[decisión]` con contexto, opciones documentadas, evidencia, supuestos, riesgos y datos faltantes. No elijas una opción.” | La decisión final corresponde al rol responsable. |
+
+</details>
 
 ---
 

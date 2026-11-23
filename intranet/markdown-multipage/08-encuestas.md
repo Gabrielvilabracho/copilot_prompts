@@ -6,6 +6,12 @@
 > **Aplicación:** Forms.
 > **Control:** defina población, decisión y tratamiento de datos antes de recopilar.
 
+> [!TIP]
+> Diseñe primero el plan de análisis. Si una pregunta no contribuye a una decisión, probablemente no necesita recopilarla.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Crea una encuesta de 10 preguntas para medir `[experiencia]` en `[población]`. Combina escalas, opciones y dos preguntas abiertas.” | Revise longitud, anonimato y privacidad. |
@@ -18,6 +24,8 @@
 | 8 | “Propón lógica de ramificación. Indica condición, destino y motivo de cada salto. Evita rutas sin salida.” | Pruebe todas las rutas. |
 | 9 | “Crea un plan de análisis que relacione cada pregunta con métrica, segmentación, visualización y decisión.” | Defínalo antes de recopilar. |
 | 10 | “Resume las respuestas para `[audiencia]`. Separa datos cuantitativos, temas cualitativos y citas anonimizadas. Incluye muestra y limitaciones.” | Proteja identidades y grupos pequeños. |
+
+</details>
 
 ---
 

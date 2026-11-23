@@ -2,6 +2,12 @@
 
 Encuentre prompts profesionales para buscar información, redactar, analizar datos, preparar presentaciones, gestionar reuniones y convertir resultados en planes verificables.
 
+![Prompts](https://img.shields.io/badge/prompts-100-5B5FC7)
+![Tareas programadas](https://img.shields.io/badge/tareas_programadas-24-0078D4)
+
+> [!TIP]
+> Elija primero el resultado que necesita; después seleccione la aplicación y adapte la plantilla.
+
 ## Empiece en tres pasos
 
 1. Elija una categoría según el resultado que necesita.
@@ -36,6 +42,9 @@ En SharePoint, convierta esta lista en un elemento web **Vínculos rápidos** y 
 Use la guía **Tareas programadas en Copilot** para configurar briefs diarios, revisiones semanales, seguimiento de compromisos y vigilancia de proyectos. Las plantillas preparan resultados y borradores, pero mantienen aprobación humana para acciones sensibles.
 
 ## Uso responsable
+
+> [!WARNING]
+> Mantenga aprobación humana para comunicaciones externas, cambios de contenido y decisiones sensibles.
 
 - Utilice únicamente fuentes autorizadas.
 - Verifique cifras, citas, fechas y compromisos.

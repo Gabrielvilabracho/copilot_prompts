@@ -6,6 +6,12 @@
 > **Aplicación:** Teams.
 > **Control:** contraste decisiones críticas con participantes o actas.
 
+> [!IMPORTANT]
+> Distinga siempre una propuesta discutida de una decisión explícitamente confirmada.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Resume esta reunión en objetivo, temas, decisiones, desacuerdos, riesgos y próximos pasos. Incluye responsable, fecha y evidencia.” | Depende de la transcripción disponible. |
@@ -18,6 +24,8 @@
 | 8 | “Redacta un mensaje posterior con acuerdos, acciones y fechas. Pide correcciones explícitas y limita a `[número]` palabras.” | Publique solo tras revisar. |
 | 9 | “Evalúa la reunión por objetivo, decisiones, acciones, temas fuera de alcance y asuntos pendientes. No evalúes desempeño personal.” | Mejore el proceso, no califique empleados. |
 | 10 | “Crea la agenda de seguimiento con pendientes, objetivo, propietario acordado, información previa y decisión esperada. Limita a `[duración]`.” | Confirme propietarios y tiempo. |
+
+</details>
 
 ---
 

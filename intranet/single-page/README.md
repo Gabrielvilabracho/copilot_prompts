@@ -1,8 +1,14 @@
 # Versión de intranet en una sola página
 
+![Prompts](https://img.shields.io/badge/prompts-100-5B5FC7)
+![Navegación](https://img.shields.io/badge/navegación-anclas-0078D4)
+
 La edición canónica y autocontenida está disponible en:
 
 **[Abrir Catálogo de prompts de alto impacto para Microsoft 365 Copilot](../../MICROSOFT_365_COPILOT_PROMPTS.md)**
+
+> [!TIP]
+> Use esta edición cuando la plataforma admita una sola página extensa con índice interno y anclas estables.
 
 ## Características editoriales
 

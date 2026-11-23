@@ -4,6 +4,9 @@
 
 Sustituya `[SITIO]` por la ruta real, por ejemplo `/sites/centro-ia`.
 
+> [!TIP]
+> Conserve los nombres de URL cortos y estables. Los títulos visibles pueden evolucionar sin romper vínculos.
+
 | Orden | Título de página | URL sugerida | Fuente editorial |
 |---:|---|---|---|
 | 1 | Biblioteca de prompts para Microsoft 365 Copilot | `[SITIO]/SitePages/biblioteca-prompts-copilot.aspx` | [PORTADA.md](PORTADA.md) |
@@ -29,3 +32,6 @@ Cómo usar → Búsqueda → Escritura → Datos → Presentaciones → Correo
 → Reuniones → Conocimiento → Encuestas → Documentos → Planificación
 → Implementación y seguridad → Fuentes → Tareas programadas → Portada
 ```
+
+> [!IMPORTANT]
+> Sustituya todos los marcadores `[SITIO]` antes de publicar o compartir la navegación.

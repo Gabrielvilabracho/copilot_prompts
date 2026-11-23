@@ -2,6 +2,9 @@
 
 [← Implementación y seguridad](11-implementacion-seguridad.md) · [Portada](README.md)
 
+> [!NOTE]
+> Las capacidades de Copilot cambian con rapidez. Compruebe licencia, disponibilidad regional y fecha de actualización antes de convertir una función en política interna.
+
 | Fuente | Uso en esta biblioteca |
 |---|---|
 | [Get started writing prompts in Microsoft Copilot](https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5) | Marco objetivo, contexto, fuente y expectativas |
@@ -20,6 +23,9 @@
 - No se verificó un límite universal de caracteres aplicable a todas las experiencias.
 - Funciones, licencias y disponibilidad pueden variar por tenant, región y despliegue.
 - Las páginas deben revisarse trimestralmente o después de cambios relevantes del servicio.
+
+> [!IMPORTANT]
+> Esta biblioteca distingue documentación oficial, evidencia temprana y síntesis editorial. No presenta las categorías como una taxonomía oficial de Microsoft.
 
 ---
 

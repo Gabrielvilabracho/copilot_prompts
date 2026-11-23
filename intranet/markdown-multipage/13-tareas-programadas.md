@@ -4,6 +4,11 @@
 
 Guía práctica para convertir prompts recurrentes en **Scheduled tasks** de Copilot: instrucciones que se ejecutan automáticamente en el día, hora y frecuencia configurados.
 
+![Ideas](https://img.shields.io/badge/ideas-24-5B5FC7)
+![Plantillas](https://img.shields.io/badge/plantillas-4-0078D4)
+![Aprobación](https://img.shields.io/badge/aprobación-humana-107C10)
+
+> [!NOTE]
 > **Nombre actual de la función:** Microsoft está cambiando “Scheduled prompts” por **Scheduled tasks** y centralizando su gestión en **Task Hub**. La interfaz puede variar durante el despliegue.
 
 ## Disponibilidad y límites
@@ -48,6 +53,16 @@ No envíes mensajes, no cambies calendarios, no edites archivos y no completes a
 5. Confirme la zona horaria y guarde.
 6. Después de la primera ejecución, revise fuentes, cobertura y ruido.
 7. Ajuste el prompt o pause la tarea si ya no produce valor.
+
+```mermaid
+flowchart LR
+    A[Probar manualmente] --> B[Schedule this]
+    B --> C[Definir frecuencia]
+    C --> D[Revisar primera ejecución]
+    D --> E{¿Produce valor?}
+    E -->|Sí| F[Mantener]
+    E -->|No| G[Editar o pausar]
+```
 
 ---
 
@@ -351,6 +366,9 @@ No envíes, publiques ni cambies datos. Preséntame cada borrador y solicita apr
 ```
 
 ## Qué NO programar sin controles adicionales
+
+> [!WARNING]
+> No convierta comodidad en autonomía irreversible. Mantenga aprobación explícita para cualquier acción que envíe, elimine, publique o modifique contenido.
 
 - Envío automático de correos o mensajes externos.
 - Eliminación, movimiento o edición masiva de archivos.

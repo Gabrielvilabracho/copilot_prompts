@@ -1,7 +1,7 @@
 # Microsoft 365 Copilot prompt catalog
 
 Objective: Produce an evidence-based Spanish guide to Microsoft 365 Copilot prompting, high-impact skills, implementation patterns, and reusable prompts. The final deliverable is `MICROSOFT_365_COPILOT_PROMPTS.md`.
-Delivery: local Markdown document; this workspace is not a Git repository, so branch, commit, and PR evidence are unavailable. Verification uses structural checks, source validation, and prompt-count checks.
+Delivery: public GitHub repository on `main`; verification uses structural checks, source validation, prompt-count checks, and remote publication confirmation.
 
 ## Specs
 
@@ -23,6 +23,8 @@ S8. Intranet publishing formats: "genra el formato 2 y otro con el formato 3 y u
 
 S9. Scheduled Copilot tasks: "genera una  lista de ideas y como aplicarlas con sus ejeemplos y templetes". Add a practical, source-backed guide to Copilot Scheduled tasks with ideas, schedules, copy-ready prompts, implementation steps, approval safeguards, and reusable templates.
 
+S10. Visual Markdown system: "aplicalo". Apply the proposed editorial design to the repository and publish it: stronger hierarchy, GitHub alerts, copy-ready code blocks, restrained badges, collapsible supporting detail, navigation, and a Mermaid workflow without removing prompt content or compromising cross-page links.
+
 ## Tasks
 
 - T1 — S1, S2, S5, S6 — Route: delegated read-only research; status: completed; evidence: eight official Microsoft sources mapped, S1/S2/S5/S6 covered.
@@ -34,6 +36,7 @@ S9. Scheduled Copilot tasks: "genera una  lista de ideas y como aplicarlas con s
 - T7 — S8 — Route: inline; status: completed; evidence: `intranet/sharepoint/` contains the publishing guide, 14-page site map, category-page template, and homepage content.
 - T8 — S4, S8 — Route: inline; status: completed; evidence: validation passed for 100 prompts in the single-page edition, 10 multipage categories with 10 prompts each, all local links, and 10 stable anchors.
 - T9 — S9 — Route: inline; status: completed; evidence: `intranet/markdown-multipage/13-tareas-programadas.md` contains 24 ideas, 24 frequency recommendations, 24 implementation notes, four reusable templates, safeguards, maintenance guidance, and three official Microsoft sources; integrated into all intranet navigation variants.
+- T10 — S10 — Route: inline; status: in progress; evidence: editorial system applied across 23 Markdown files; validation passed for 100 prompts, 10×10 category pages, 24 scheduled tasks, local links, balanced details, visual components, and a clean diff check; commit and remote publication pending.
 
 ## Log
 
@@ -56,3 +59,7 @@ L8. Intranet editions completed. Automated validation reported: `PASS single_pro
 L9. User requested ideas, examples, and templates specifically for Copilot's scheduled task feature. Official Microsoft Support confirms the rename from Scheduled prompts to Scheduled tasks, Task Hub management, natural-language scheduling, Copilot license requirement, and initial web/desktop availability.
 
 L10. Scheduled-task guide completed and verified. Validation reported: `PASS ideas=24 frequencies=24 implementation_notes=24 sharepoint_pages=15 local_links=valid navigation=integrated`.
+
+L11. User authorized applying the proposed visual Markdown system to the whole repository and updating the published GitHub repository.
+
+L12. Visual system completed. Added `intranet/EDITORIAL_STYLE.md`; GitHub alerts, restrained badges, Mermaid workflows, open disclosure blocks, and stronger navigation were applied across the root, single-page, multipage, and SharePoint editions without removing catalog content. Validation reported: `PASS files=23 prompts=100 categories=10x10 scheduled=24 links=valid details=balanced visual_components=present diff_check=clean`.

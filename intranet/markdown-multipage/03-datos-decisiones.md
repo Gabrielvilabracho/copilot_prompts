@@ -6,6 +6,12 @@
 > **Aplicaciones:** Excel y Analyst.
 > **Control:** use tablas limpias, documente unidades y no confunda correlación con causalidad.
 
+> [!WARNING]
+> Verifique fórmulas, unidades, periodos y valores faltantes antes de utilizar el análisis para decidir.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Analiza la tabla `[nombre]`. Describe columnas, tipos, unidades, valores faltantes, duplicados y posibles errores. No corrijas datos.” | Revise calidad antes de calcular. |
@@ -18,6 +24,8 @@
 | 8 | “Diseña un panel para `[audiencia]` con máximo seis KPI. Define cada indicador, recomienda gráfico y alerta, y justifica exclusiones.” | Valide accesibilidad y carga visual. |
 | 9 | “Compara `[cohorte A]` y `[cohorte B]` en `[métricas]`. Reporta diferencias, tamaño de muestra y limitaciones. No atribuyas causalidad.” | Revise sesgo de selección. |
 | 10 | “Redacta un memo para `[decisor]` con hallazgos, evidencia, incertidumbre, opciones y preguntas pendientes. Referencia hojas, tablas o celdas.” | Recalcule manualmente cifras críticas. |
+
+</details>
 
 ---
 

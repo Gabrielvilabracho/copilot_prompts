@@ -2,6 +2,9 @@
 
 [← Volver a la portada](README.md) · [Primera categoría →](01-busqueda-sintesis.md)
 
+> [!IMPORTANT]
+> Un objetivo claro es obligatorio. Contexto, fuente y expectativas hacen que el resultado sea más preciso y verificable.
+
 ## El marco OCFE
 
 Microsoft propone cuatro componentes para estructurar prompts:
@@ -40,6 +43,9 @@ Verbo + entregable + audiencia + propósito + fuente + periodo + restricciones +
 - Pida citas, supuestos y datos faltantes.
 - Revise nombres, cifras, fechas y compromisos.
 
+> [!TIP]
+> Si el resultado no es suficiente, mejore una variable cada vez: fuente, periodo, audiencia, formato o criterio de calidad.
+
 ## Ejemplo completo
 
 ```text
@@ -47,6 +53,15 @@ Compara las propuestas de los proveedores para el comité de compras, usando
 /Propuesta-A y /Propuesta-B. Evalúa precio, plazo, alcance, riesgos y exclusiones.
 Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 “No indicado” cualquier información ausente. No recomiendes una adjudicación.
+```
+
+```mermaid
+flowchart TD
+    O[Objetivo] --> P[Prompt]
+    C[Contexto] --> P
+    F[Fuente] --> P
+    E[Expectativas] --> P
+    P --> R[Resultado verificable]
 ```
 
 ---

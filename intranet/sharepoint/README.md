@@ -2,7 +2,12 @@
 
 Guía para convertir la biblioteca de prompts en un pequeño portal de páginas modernas de SharePoint, con navegación clara, contenido escaneable y mantenimiento sostenible.
 
-> **Importante:** SharePoint no convierte automáticamente estos archivos Markdown en páginas modernas `.aspx`. Los archivos de `../markdown-multipage/` son el contenido editorial fuente que debe copiarse a los elementos web de texto o publicarse mediante el proceso corporativo autorizado.
+![Páginas](https://img.shields.io/badge/páginas-15-5B5FC7)
+![Categorías](https://img.shields.io/badge/categorías-10-0078D4)
+![Revisión](https://img.shields.io/badge/revisión-trimestral-107C10)
+
+> [!IMPORTANT]
+> SharePoint no convierte automáticamente estos archivos Markdown en páginas modernas `.aspx`. Los archivos de `../markdown-multipage/` son el contenido editorial fuente que debe copiarse a los elementos web de texto o publicarse mediante el proceso corporativo autorizado.
 
 ## Resultado esperado
 
@@ -112,7 +117,22 @@ Configure columnas de sitio o propiedades equivalentes:
 7. Envíe a revisión editorial, seguridad y propietario del contenido.
 8. Publique y programe revisión trimestral.
 
+```mermaid
+flowchart LR
+    A[Crear páginas] --> B[Aplicar plantilla]
+    B --> C[Copiar contenido]
+    C --> D[Configurar navegación]
+    D --> E[Revisar permisos]
+    E --> F[Publicar]
+```
+
+> [!TIP]
+> Publique primero una categoría piloto. Valide móvil, búsqueda y navegación antes de replicar la plantilla en todo el portal.
+
 ## Control de calidad
+
+<details open>
+<summary><strong>Ver checklist de publicación</strong></summary>
 
 - [ ] Las 15 páginas del mapa existen.
 - [ ] Los 10 enlaces de categoría funcionan.
@@ -123,3 +143,5 @@ Configure columnas de sitio o propiedades equivalentes:
 - [ ] Propietario y fechas están visibles.
 - [ ] Las páginas respetan permisos y etiquetas de sensibilidad.
 - [ ] Existe un canal para informar errores o solicitar cambios.
+
+</details>

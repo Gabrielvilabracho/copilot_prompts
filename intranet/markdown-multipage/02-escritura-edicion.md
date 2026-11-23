@@ -6,6 +6,12 @@
 > **Aplicación:** Word.
 > **Control:** preserve hechos, términos, obligaciones y citas durante la reescritura.
 
+> [!IMPORTANT]
+> Reescribir no autoriza a cambiar hechos, cifras, compromisos ni términos jurídicos.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Redacta un primer borrador de `[tipo de documento]` para `[audiencia]` con el objetivo de `[resultado]`, usando `[fuentes]`. Incluye resumen, contexto, propuesta, riesgos y próximos pasos.” | Referencie documentos base y revise cada afirmación. |
@@ -18,6 +24,8 @@
 | 8 | “Evalúa estructura, objetivo, orden lógico, evidencia, transiciones y llamada a la acción. Prioriza cinco mejoras y propone un esquema sin reescribir.” | Aplique solo mejoras aceptadas. |
 | 9 | “Transforma este informe en una nota ejecutiva de una página: decisión solicitada, tres hallazgos, impacto, riesgos y siguiente paso.” | Verifique que la compresión no elimine condiciones. |
 | 10 | “Realiza una revisión final: ortografía, claridad, terminología, afirmaciones sin fuente, datos sensibles y acciones ambiguas. Devuelve correcciones; no edites automáticamente.” | Mantenga aprobación humana antes de publicar. |
+
+</details>
 
 ---
 

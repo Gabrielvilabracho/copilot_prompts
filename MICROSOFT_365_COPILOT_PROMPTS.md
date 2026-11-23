@@ -4,6 +4,13 @@
 
 Guía práctica y basada en fuentes oficiales para diseñar, implementar y gobernar prompts en Microsoft 365 Copilot. Incluye **100 plantillas reutilizables**, organizadas en **10 categorías de trabajo**, con instrucciones de implementación.
 
+![Prompts](https://img.shields.io/badge/prompts-100-5B5FC7)
+![Categorías](https://img.shields.io/badge/categorías-10-0078D4)
+![Scheduled tasks](https://img.shields.io/badge/tareas_programadas-24-107C10)
+
+> [!IMPORTANT]
+> Adapte los campos entre corchetes, utilice únicamente fuentes autorizadas y verifique siempre el resultado antes de compartirlo.
+
 > **Alcance.** Este documento trata Microsoft 365 Copilot y Copilot Chat para el trabajo. No cubre GitHub Copilot. La disponibilidad concreta depende de la licencia, el cliente, la región, las políticas del tenant y el despliegue gradual de cada función.[^2][^6]
 
 | Información editorial | Detalle |
@@ -32,6 +39,18 @@ Guía práctica y basada en fuentes oficiales para diseñar, implementar y gober
 3. Adjunte o referencie únicamente las fuentes necesarias.
 4. Ejecute el prompt en la aplicación recomendada.
 5. Revise citas, cifras, permisos y conclusiones antes de reutilizar la respuesta.
+
+```mermaid
+flowchart LR
+    A[Elegir categoría] --> B[Adaptar plantilla]
+    B --> C[Añadir fuentes]
+    C --> D[Ejecutar]
+    D --> E[Verificar]
+    E --> F[Compartir o programar]
+```
+
+> [!TIP]
+> Para trabajo recurrente, pruebe primero el prompt manualmente y después consulte la guía de tareas programadas.
 
 ## Hallazgos principales
 
@@ -119,6 +138,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Aplicaciones:** Copilot Chat; Researcher cuando esté disponible.
 **Implementación:** conecte fuentes concretas, delimite periodo y solicite citas. No confunda una síntesis con evidencia primaria.
 
+<details open>
+<summary><strong>Ver los 10 prompts de búsqueda y síntesis</strong></summary>
+
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
 | 1 | **Resumen ejecutivo.** “Resume `[tema o proyecto]` usando `[archivos/correos/chats]` del periodo `[fecha inicial–fecha final]`. Para `[audiencia]`, presenta: situación actual, decisiones, riesgos, bloqueos y próximos pasos. Incluye una referencia por afirmación y marca cualquier contradicción.” | Copilot Chat. Añada las fuentes con `/` o adjuntos; valide cada cita. |
@@ -132,6 +154,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Detección de cambios.** “Compara la versión `[anterior]` con `[actual]`. Enumera cambios de alcance, obligaciones, fechas, responsables y riesgos. Cita ambas versiones y clasifica cada cambio como añadido, eliminado o modificado.” | Adjunte versiones identificables; confirme que no sean copias duplicadas. |
 | 10 | **Brief de decisión.** “Prepara un brief sobre `[decisión]` usando `[fuentes]`. Incluye contexto, opciones documentadas, evidencia a favor y en contra, supuestos, riesgos y datos faltantes. No elijas una opción; formula criterios para que decida `[rol]`.” | Copilot Chat o Researcher. La decisión final corresponde a una persona responsable. |
 
+</details>
+
 [↑ Volver al inicio](#inicio) · [Siguiente categoría: Escritura y edición →](#categoria-2)
 
 <a id="categoria-2"></a>
@@ -141,6 +165,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** acelerar primeros borradores, reescritura y control editorial.
 **Aplicación:** Word.
 **Implementación:** seleccione el pasaje cuando quiera editar solo una sección; preserve hechos, términos y citas durante la reescritura.
+
+<details open>
+<summary><strong>Ver los 10 prompts de escritura y edición</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -155,6 +182,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Versión ejecutiva.** “Transforma este informe en una nota ejecutiva de una página. Incluye decisión solicitada, tres hallazgos, impacto, riesgos y siguiente paso. Conserva cifras y añade referencias a las secciones originales.” | Word. Verifique que la compresión no elimine condiciones relevantes. |
 | 10 | **Control final.** “Realiza una revisión final de `[documento]`: ortografía, claridad, consistencia terminológica, afirmaciones sin fuente, datos sensibles y acciones ambiguas. Devuelve una lista de correcciones; no edites automáticamente.” | Word. Mantenga aprobación humana antes de distribuir. |
 
+</details>
+
 [← Búsqueda](#categoria-1) · [↑ Inicio](#inicio) · [Datos y decisiones →](#categoria-3)
 
 <a id="categoria-3"></a>
@@ -164,6 +193,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** explorar datos, detectar patrones y explicar resultados sin ocultar supuestos.
 **Aplicaciones:** Excel; Analyst cuando esté disponible.
 **Implementación:** convierta el rango en tabla, use encabezados claros, documente unidades y no trate correlación como causalidad.
+
+<details open>
+<summary><strong>Ver los 10 prompts de datos y decisiones</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -178,6 +210,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Comparación de cohortes.** “Compara `[cohorte A]` y `[cohorte B]` en `[métricas]`, controlando `[periodo/segmento]`. Reporta diferencias absolutas y relativas, tamaño de muestra y limitaciones. No atribuyas causalidad.” | Analyst o Excel. Revise sesgos de selección y muestras pequeñas. |
 | 10 | **Memo analítico.** “A partir de `[tabla/análisis]`, redacta un memo para `[decisor]` con hallazgos, evidencia, incertidumbre, opciones y preguntas pendientes. Incluye referencias a hojas, tablas o celdas utilizadas.” | Analyst o Copilot Chat con el archivo. Recalcule cifras críticas manualmente. |
 
+</details>
+
 [← Escritura](#categoria-2) · [↑ Inicio](#inicio) · [Presentaciones →](#categoria-4)
 
 <a id="categoria-4"></a>
@@ -187,6 +221,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** transformar información verificada en una historia clara para una audiencia concreta.
 **Aplicación:** PowerPoint.
 **Implementación:** use un documento fuente sólido; revise que diseño, cifras y notas no distorsionen la evidencia.
+
+<details open>
+<summary><strong>Ver los 10 prompts de presentaciones</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -201,6 +238,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Accesibilidad visual.** “Audita el deck por legibilidad, densidad, contraste, jerarquía, texto alternativo y dependencia exclusiva del color. Prioriza correcciones por impacto y no alteres datos.” | PowerPoint. Complete con el comprobador de accesibilidad nativo. |
 | 10 | **Diapositiva de decisión.** “Crea una diapositiva para decidir `[asunto]`: decisión requerida, contexto mínimo, opciones, criterios, riesgos y fecha límite. No recomiendes una opción si las fuentes no la respaldan.” | PowerPoint. Valide la decisión con el propietario del proceso. |
 
+</details>
+
 [← Datos](#categoria-3) · [↑ Inicio](#inicio) · [Correo y calendario →](#categoria-5)
 
 <a id="categoria-5"></a>
@@ -210,6 +249,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** resumir hilos, redactar mensajes y preparar el trabajo alrededor del calendario.
 **Aplicación:** Outlook.
 **Implementación:** confirme destinatarios, adjuntos, fechas y compromisos antes de enviar.
+
+<details open>
+<summary><strong>Ver los 10 prompts de correo y calendario</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -224,6 +266,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Boletín interno.** “Crea un correo semanal de `[equipo/proyecto]` usando `[fuentes]`. Secciones: logros, métricas, decisiones, riesgos, ayuda necesaria y próximos hitos. Máximo `[número]` palabras.” | Outlook o Word. Revise datos sensibles y listas de distribución. |
 | 10 | **Auditoría de tono.** “Evalúa este borrador por claridad, tono, ambigüedad, exceso de compromiso y posibles interpretaciones adversas. Propón una versión corregida y explica los cambios.” | Outlook. Aplique criterio profesional, legal o de RR. HH. cuando corresponda. |
 
+</details>
+
 [← Presentaciones](#categoria-4) · [↑ Inicio](#inicio) · [Reuniones →](#categoria-6)
 
 <a id="categoria-6"></a>
@@ -233,6 +277,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** ponerse al día, recuperar decisiones y convertir conversación en acciones.
 **Aplicación:** Teams.
 **Implementación:** la calidad depende de la transcripción y del contenido disponible. Contraste decisiones críticas con participantes o actas.
+
+<details open>
+<summary><strong>Ver los 10 prompts de reuniones</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -247,6 +294,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Eficacia de reunión.** “Evalúa la reunión por claridad del objetivo, decisiones alcanzadas, acciones, temas fuera de alcance y asuntos que requieren otra sesión. No evalúes desempeño ni actitud de personas.” | Teams. Use para mejorar el proceso, no para calificar empleados. |
 | 10 | **Próxima agenda.** “Crea la agenda de seguimiento usando los pendientes de esta reunión. Para cada punto incluye objetivo, propietario acordado, información previa y decisión esperada. Limita la agenda a `[duración]`.” | Teams/Outlook. Confirme propietarios y duración. |
 
+</details>
+
 [← Correo](#categoria-5) · [↑ Inicio](#inicio) · [Conocimiento colaborativo →](#categoria-7)
 
 <a id="categoria-7"></a>
@@ -256,6 +305,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** convertir notas dispersas en conocimiento reutilizable y coordinado.
 **Aplicaciones:** OneNote y Loop, según disponibilidad.
 **Implementación:** mantenga enlaces a fuentes y propietarios; no permita que un resumen sustituya el documento oficial.
+
+<details open>
+<summary><strong>Ver los 10 prompts de conocimiento colaborativo</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -270,6 +322,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Limpieza de conocimiento.** “Identifica páginas duplicadas, obsoletas, contradictorias o sin propietario en `[conjunto]`. Propón conservar, combinar, actualizar o archivar; no realices cambios.” | Copilot Chat/OneNote según soporte. Revisión humana antes de archivar. |
 | 10 | **Checklist operativo.** “Convierte este procedimiento en una lista de verificación con pasos, responsable, evidencia esperada, condición de finalización y ruta de escalamiento.” | OneNote o Loop. Pruebe el checklist con un caso real. |
 
+</details>
+
 [← Reuniones](#categoria-6) · [↑ Inicio](#inicio) · [Encuestas →](#categoria-8)
 
 <a id="categoria-8"></a>
@@ -279,6 +333,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** diseñar formularios útiles, neutrales y analizables.
 **Aplicación:** Forms, cuando las capacidades de Copilot estén disponibles.
 **Implementación:** defina objetivo, población y decisión antes de generar preguntas; revise privacidad y sesgo.
+
+<details open>
+<summary><strong>Ver los 10 prompts de encuestas</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -293,6 +350,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Plan de análisis.** “Para esta encuesta, crea un plan de análisis que relacione cada pregunta con métrica, segmentación, visualización y decisión. Señala limitaciones de muestra y sesgo.” | Forms/Excel. Defina el plan antes de recopilar respuestas. |
 | 10 | **Resumen de resultados.** “Resume las respuestas de `[encuesta]` para `[audiencia]`. Separa datos cuantitativos, temas cualitativos y citas anonimizadas. Incluye tamaño de muestra, periodo y limitaciones.” | Forms exportado a Excel o Analyst. Proteja identidades y grupos pequeños. |
 
+</details>
+
 [← Conocimiento](#categoria-7) · [↑ Inicio](#inicio) · [Gestión documental →](#categoria-9)
 
 <a id="categoria-9"></a>
@@ -302,6 +361,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** localizar, revisar y gobernar contenido en SharePoint y OneDrive.
 **Aplicaciones:** Copilot Chat, SharePoint y OneDrive según licencia.
 **Implementación:** Copilot respeta permisos existentes, pero puede amplificar problemas de sobreexposición; revise permisos y etiquetas.[^3]
+
+<details open>
+<summary><strong>Ver los 10 prompts de gestión documental</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -316,6 +378,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 9 | **Preparación de auditoría.** “Crea una lista de evidencia disponible para `[control/requisito]`. Para cada elemento incluye ubicación, propietario, periodo y brecha. No declares cumplimiento.” | SharePoint/Copilot Chat. La evaluación formal corresponde a auditoría/compliance. |
 | 10 | **Modelo de gobernanza.** “A partir de `[documentación]`, propón un ciclo de vida documental: creación, revisión, aprobación, publicación, actualización y archivo. Asigna roles genéricos y criterios, no personas.” | SharePoint. Aprobación de propietarios, seguridad y cumplimiento. |
 
+</details>
+
 [← Encuestas](#categoria-8) · [↑ Inicio](#inicio) · [Planificación y automatización →](#categoria-10)
 
 <a id="categoria-10"></a>
@@ -325,6 +389,9 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 **Objetivo:** convertir resultados en planes controlables y decidir cuándo usar un agente.
 **Aplicaciones:** Planner, Copilot Chat y agentes, según licencia y políticas.
 **Implementación:** diferencie sugerir acciones de ejecutarlas; revise permisos, conectores, términos y políticas de privacidad de cada agente.[^3]
+
+<details open>
+<summary><strong>Ver los 10 prompts de planificación y automatización</strong></summary>
 
 | # | Contenido del prompt | Cómo implementarlo |
 |---|---|---|
@@ -338,6 +405,8 @@ Devuelve una matriz comparativa, cita la fuente de cada dato y marca como
 | 8 | **Diseño de agente.** “Evalúa si `[proceso]` necesita un agente. Describe usuario, objetivo, fuentes, acciones, permisos, límites, aprobaciones humanas, errores previsibles y métricas. Recomienda no crear un agente si un prompt reutilizable basta.” | Copilot Chat/Copilot Studio. Revise con TI, seguridad y propietarios de datos. |
 | 9 | **Instrucciones del agente.** “Redacta instrucciones para un agente de `[función]`: alcance permitido, fuentes autorizadas, pasos, formato, criterios de rechazo, escalamiento y acciones que siempre requieren aprobación humana.” | Copilot Studio o constructor de agentes. Pruebe casos válidos y adversos. |
 | 10 | **Prueba del flujo.** “Crea un plan de pruebas para `[agente/automatización]` con casos normales, datos faltantes, permisos insuficientes, instrucciones maliciosas, fallo de fuente y aprobación rechazada. Define resultado esperado y evidencia.” | Copilot Studio/gestión del agente. No publique sin pruebas y observabilidad. |
+
+</details>
 
 [← Gestión documental](#categoria-9) · [↑ Volver al inicio](#inicio) · [Implementación y seguridad →](#cómo-implementar-una-biblioteca-de-prompts)
 
@@ -395,6 +464,9 @@ Evalúe precisión, cobertura, trazabilidad, formato, privacidad y facilidad de 
 No compare equipos sin controlar complejidad, experiencia, volumen y calidad de entrada.
 
 ## Seguridad, privacidad y revisión humana
+
+> [!WARNING]
+> Las decisiones sensibles y las acciones que envían, eliminan, comparten o modifican contenido deben conservar una aprobación humana explícita.
 
 1. **Permisos primero.** Copilot muestra contenido que la identidad del usuario puede consultar. Corrija sobreexposición en SharePoint y otros repositorios; Copilot no sustituye gobierno de acceso.[^3]
 2. **Historial y retención.** Prompts y respuestas pueden almacenarse como historial de actividad y quedar sujetos a búsqueda, auditoría y retención mediante Microsoft Purview.[^3]

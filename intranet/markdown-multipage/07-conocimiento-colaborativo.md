@@ -6,6 +6,12 @@
 > **Aplicaciones:** OneNote y Loop.
 > **Control:** preserve enlaces, propietarios y documentos oficiales.
 
+> [!NOTE]
+> Un resumen facilita el acceso, pero no sustituye la fuente oficial ni su ciclo de revisión.
+
+<details open>
+<summary><strong>Ver los 10 prompts</strong></summary>
+
 | # | Prompt listo para usar | Implementación |
 |---|---|---|
 | 1 | “Organiza estas notas en objetivos, hechos, ideas, decisiones, preguntas y acciones. No cambies el significado. Marca duplicados y contradicciones.” | Revise antes de reemplazar originales. |
@@ -18,6 +24,8 @@
 | 8 | “Resume actualizaciones de este espacio durante `[periodo]`: contenido nuevo, decisiones, tareas, bloqueos y páginas por revisar.” | Confirme el alcance incluido. |
 | 9 | “Identifica páginas duplicadas, obsoletas, contradictorias o sin propietario. Propón conservar, combinar, actualizar o archivar; no cambies nada.” | Revisión humana antes de archivar. |
 | 10 | “Convierte este procedimiento en una lista con pasos, responsable, evidencia, condición de finalización y escalamiento.” | Pruebe con un caso real. |
+
+</details>
 
 ---
 
