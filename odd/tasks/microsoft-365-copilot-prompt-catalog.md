@@ -36,7 +36,7 @@ S10. Visual Markdown system: "aplicalo". Apply the proposed editorial design to 
 - T7 — S8 — Route: inline; status: completed; evidence: `intranet/sharepoint/` contains the publishing guide, 14-page site map, category-page template, and homepage content.
 - T8 — S4, S8 — Route: inline; status: completed; evidence: validation passed for 100 prompts in the single-page edition, 10 multipage categories with 10 prompts each, all local links, and 10 stable anchors.
 - T9 — S9 — Route: inline; status: completed; evidence: `intranet/markdown-multipage/13-tareas-programadas.md` contains 24 ideas, 24 frequency recommendations, 24 implementation notes, four reusable templates, safeguards, maintenance guidance, and three official Microsoft sources; integrated into all intranet navigation variants.
-- T10 — S10 — Route: inline; status: in progress; evidence: editorial system applied across 23 Markdown files; validation passed for 100 prompts, 10×10 category pages, 24 scheduled tasks, local links, balanced details, visual components, and a clean diff check; commit and remote publication pending.
+- T10 — S10 — Route: inline; status: completed; evidence: editorial system applied across 23 user-facing Markdown files; validation passed for 100 prompts, 10×10 category pages, 24 scheduled tasks, local links, balanced details, visual components, and a clean diff check; implementation commit `8f36db5` published to `origin/main`.
 
 ## Log
 
@@ -63,3 +63,5 @@ L10. Scheduled-task guide completed and verified. Validation reported: `PASS ide
 L11. User authorized applying the proposed visual Markdown system to the whole repository and updating the published GitHub repository.
 
 L12. Visual system completed. Added `intranet/EDITORIAL_STYLE.md`; GitHub alerts, restrained badges, Mermaid workflows, open disclosure blocks, and stronger navigation were applied across the root, single-page, multipage, and SharePoint editions without removing catalog content. Validation reported: `PASS files=23 prompts=100 categories=10x10 scheduled=24 links=valid details=balanced visual_components=present diff_check=clean`.
+
+L13. Published implementation commit `8f36db5` (`docs: apply editorial visual system`) to `origin/main` at https://github.com/Gabrielvilabracho/copilot_prompts.
